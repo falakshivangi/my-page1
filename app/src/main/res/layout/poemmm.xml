@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="१) आजीने भोपळे कोठे नेऊन विकले?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/q1_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/q1_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="बाजारात"/>
+            <RadioButton
+                android:id="@+id/q1_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="शाळेत"/>
+            <RadioButton
+                android:id="@+id/q1_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="घरात"/>
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="२) वेलीवर येणाऱ्या भाज्यांची नावे सांगा."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/q2_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/q2_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="भोपळा"/>
+            <RadioButton
+                android:id="@+id/q2_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="टोमॅटो"/>
+            <RadioButton
+                android:id="@+id/q2_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="वांगी"/>
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="३) भोपळ्याच्या तर उडणाऱ्या पडझडीसाठी नावे सांगा."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/q3_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/q3_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="बी"/>
+            <RadioButton
+                android:id="@+id/q3_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="फळ"/>
+            <RadioButton
+                android:id="@+id/q3_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="पान"/>
+        </RadioGroup>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

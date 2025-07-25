@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Question 1 -->
+        <TextView
+            android:text="१) सोहम सकाळी उठून काय काय करतो?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/q1_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1_op1" android:text="खेळतो आणि झोपतो"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q1_op2" android:text="दात घासतो, अंघोळ करतो, जेवतो"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q1_op3" android:text="शाळेत जात नाही"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:text="२) सोहमला गोष्ट कोण सांगते?"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/q2_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2_op1" android:text="आई"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q2_op2" android:text="गुरुजी"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q2_op3" android:text="आजी"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:text="३) तू दिवसभरात कोणकोणते काम करतोस?"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/q3_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3_op1" android:text="केवळ खेळतो"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q3_op2" android:text="अभ्यास करतो, खेळतो, जेवतो"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q3_op3" android:text="फक्त झोपतो"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/submitButton"
+            android:text="उत्तर पाठवा"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#006400"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

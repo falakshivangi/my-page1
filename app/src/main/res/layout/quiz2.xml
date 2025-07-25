@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Question 1 -->
+        <TextView
+            android:text="१) तुझा मित्र/मैत्रीण आवडता सण कोणता?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+        <RadioGroup android:id="@+id/q1_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1_op1" android:text="दिवाळी"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q1_op2" android:text="गणेश चतुर्थी"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <RadioButton android:id="@+id/q1_op3" android:text="होळी"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:text="२) तुला पावसाळा आवडतो का?"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup android:id="@+id/q2_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2_op1" android:text="होय"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q2_op2" android:text="नाही"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:text="३) तुला पावसाळा का आवडतो किंवा का नाही आवडत?"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup android:id="@+id/q3_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3_op1" android:text="भिजायला मजा येते"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q3_op2" android:text="किचकट असतो"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q3_op3" android:text="निसर्ग सुंदर दिसतो"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:text="४) पावसाळा ओळखून आपल्या परिसरामध्ये काय बदल होतात ते सांग."
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup android:id="@+id/q4_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q4_op1" android:text="सार्वत्र हिरवळ पसरते"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q4_op2" android:text="पाणी साचते"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/q4_op3" android:text="थंडी जाणवते"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:text="उत्तर पाठवा"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#006400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

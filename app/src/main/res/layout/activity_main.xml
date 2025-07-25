@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="(१) या कवितेत दारातून कोण कोण येत आहेत?"
+            android:textSize="18sp"
+            android:textStyle="bold"  android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <RadioGroup android:id="@+id/group1"
+            android:layout_height="wrap_content" android:layout_width="wrap_content">
+            <RadioButton android:id="@+id/q1a" android:text="मामा-मामी, बाबा-आई, दादा-वहिनी"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q1b" android:text="फक्त बाबा-आई"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q1c" android:text="फक्त मामा-मामी"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q1d" android:text="शेजारी आणि मित्र"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="(२) मामा-मामी बाळासाठी काय आणतात?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <RadioGroup android:id="@+id/group2" android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+            <RadioButton android:id="@+id/q2a" android:text="पाण्याची बाटली"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <RadioButton android:id="@+id/q2b" android:text="छान बाहुली"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q2c" android:text="गोड गोड खाऊ"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q2d" android:text="गाणं म्हणतात"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" /></RadioGroup>
+
+
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="(३) गोड गोड पापी कोण घेते?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <RadioGroup android:id="@+id/group3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+            <RadioButton android:id="@+id/q3a" android:text="आई"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q3b" android:text="दादा"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q3c" android:text="काका"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q3d" android:text="शेजारी"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+    </RadioGroup>
+
+
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="(४) तुझ्या घरी गाण्यासाठी कोणकोणते पाहुणे येतात?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+        <RadioGroup android:id="@+id/group4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" >
+            <RadioButton android:id="@+id/q4a" android:text="मामा व मामी"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q4b" android:text="काका व काकी"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q4c" android:text="दादा व वहिनी"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q4d" android:text="आई व बाबा"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </RadioGroup>
+
+
+
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:text="उत्तर तपासा"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:id="@+id/resultText"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+</LinearLayout>
+
+</ScrollView>
+
+
+
+
+

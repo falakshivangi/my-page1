@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="चतुर उंदीर - चित्र व प्रश्न"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:padding="10dp" />
+
+        <!-- Story Images -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mouse"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="10dp"/>
+
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="१) येथे काय बरे झाले असेल?"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:paddingTop="10dp"/>
+
+        <EditText
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            android:hint="तुमचे उत्तर लिहा" />
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="२) या गोष्टीला तुम्ही कोणते नाव द्याल?"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:paddingTop="10dp"/>
+
+        <EditText
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            android:hint="तुमचे उत्तर लिहा" />
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="३) गोष्ट थोडक्यात लिहा."
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:paddingTop="10dp"/>
+
+        <EditText
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            android:hint="थोडक्यात गोष्ट लिहा" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="उत्तर सबमिट करा"
+            android:textSize="18sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

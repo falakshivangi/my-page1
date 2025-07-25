@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- शीर्षक -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="शब्द तयार कर व लिही"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="5dp" />
+
+        <!-- फुलांसारखी शब्द बॉक्स -->
+        <GridLayout
+            android:id="@+id/flowerGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/flower1"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="@drawable/flower_bg"
+                android:gravity="center"
+                android:hint="____" />
+
+            <EditText
+                android:id="@+id/flower2"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="@drawable/flower_bg"
+                android:gravity="center"
+                android:hint="____" />
+
+            <EditText
+                android:id="@+id/flower3"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="@drawable/flower_bg"
+                android:gravity="center"
+                android:hint="____" />
+        </GridLayout>
+
+        <!-- ओळखा पाहू -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ओळखा पाहू"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/riddleQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="सुपासारखे कान माझे, चिमुकले डोळे..."
+            android:textSize="16sp"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/riddleAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="उत्तर लिहा"
+            android:background="@android:drawable/edit_text"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/checkRiddleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="तपासा" />
+
+        <!-- शब्द शोध पाटी -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="शब्द शोध पाटी"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="5dp" />
+
+        <GridLayout
+            android:id="@+id/wordSearchGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:padding="10dp">
+
+            <!-- Add TextViews dynamically in Java -->
+        </GridLayout>
+
+        <EditText
+            android:id="@+id/foundWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="इथे शब्द लिहा"
+            android:padding="5dp" />
+
+    </LinearLayout>
+</ScrollView>

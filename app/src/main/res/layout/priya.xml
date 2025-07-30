@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF8E1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="वाचनपाठ - 2 : प्रश्नोत्तर "
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="१) कोण आली?"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:paddingTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="उत्तर लिहा"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="२) कोण कोण घार वाचवत आहेत?"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="उत्तर लिहा"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="३) तुला माहिती असलेल्या पक्ष्यांची नावे सांग."
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="उत्तर लिहा"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="उत्तर पाठवा"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

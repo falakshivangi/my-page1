@@ -1,88 +1,119 @@
 package com.spark.mypage1;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.*;
+import android.widget.ExpandableListView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class IndexActivity extends AppCompatActivity {
 
-    ListView lessonListView;
+    ExpandableListView expandableListView;
+    List<String> listGroupTitles;
+    HashMap<String, List<String>> listChildData;
 
-    String[] lessons = {
-            "पाठ १: माझ्या या दारातून",
-            "पाठ ३: वाचनपाठ - १ (काका आला, मामा आला)",
-            "पाठ ४: वाचनपाठ - २ (घार आली घार)",
-            "पाठ ५: वाचनपाठ - ३ (आला आला पाऊस आला)",
-            "पाठ ६: मला घरापर्यंत पोहोचव",
-            "पाठ ७: टिपके जोड़ व गिरव",
-            "पाठ ८: ए आई मला पावसात जाऊ दे",
-            "पाठ ९: शब्द तयार कर व लिही",
-            "पाठ १०: सोहमचा दिवस",
-            "पाठ ११: z (ट्रेसिंग)",
-            "पाठ १२: चतुर उंदीर",
-            "पाठ १३: भोपळा",
-            "पाठ 14: priya vp"  , // ✅ New Lesson Added
-    };
-
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_indexpage);
 
-        lessonListView = findViewById(R.id.lessonListView);
+        expandableListView = findViewById(R.id.expandableListView);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, lessons);
-        lessonListView.setAdapter(adapter);
+        prepareListData();
 
-        lessonListView.setOnItemClickListener((parent, view, position, id) -> {
-            switch (position) {
-                case 0:
-                    startActivity(new Intent(IndexActivity.this, QuizActivity.class));
-                    break;
-                case 1:
-                    startActivity(new Intent(IndexActivity.this, reading.class));
-                    break;
-                case 2:
-                    startActivity(new Intent(IndexActivity.this, exerciseActivity.class));
-                    break;
-                case 3:
-                    startActivity(new Intent(IndexActivity.this, ExercisePome2Activity.class));
-                    break;
-                case 4:
-                    startActivity(new Intent(IndexActivity.this, TracingActivity.class));
-                    break;
-                case 5:
-                    startActivity(new Intent(IndexActivity.this, TraceExerciseActivity.class));
-                    break;
-                case 6:
-                    startActivity(new Intent(IndexActivity.this, vacha.class));
-                    break;
-                case 7:
-                    startActivity(new Intent(IndexActivity.this, WordActivity.class));
-                    break;
-                case 8:
-                    startActivity(new Intent(IndexActivity.this, ExerciseSohamActivity.class));
-                    break;
-                case 9:
-                    startActivity(new Intent(IndexActivity.this, TracingActivity.class));
-                    break;
-                case 10:
-                    startActivity(new Intent(IndexActivity.this, CleverMouseActivity.class)); // ✅ चतुर उंदीर
-                    break;
-                case 11:
-                    startActivity(new Intent(IndexActivity.this, BhoplaQuizActivity.class)); // ✅ New भोपळा Activity
-                    break;
+        // Create and set the expandable list adapter
+        CustomExpandableListAdapter adapter = new CustomExpandableListAdapter(this, listGroupTitles, listChildData);
+        expandableListView.setAdapter(adapter);
+
+        expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
+            // Bhag 1 lessons
+            if (groupPosition == 0) {
+                switch (childPosition) {
+                    case 0:
+                        startActivity(new Intent(IndexActivity.this, QuizActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(IndexActivity.this, reading.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(IndexActivity.this, exerciseActivity.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(IndexActivity.this, ExercisePome2Activity.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(IndexActivity.this, TracingActivity.class));
+                        break;
+                    case 5:
+                        startActivity(new Intent(IndexActivity.this, TraceExerciseActivity.class));
+                        break;
+                    case 6:
+                        startActivity(new Intent(IndexActivity.this, vacha.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(IndexActivity.this, WordActivity.class));
+                        break;
+                    case 8:
+                        startActivity(new Intent(IndexActivity.this, ExerciseSohamActivity.class));
+                        break;
+                    case 9:
+                        startActivity(new Intent(IndexActivity.this, TracingActivity.class));
+                        break;
+                    case 10:
+                        startActivity(new Intent(IndexActivity.this, CleverMouseActivity.class));
+                        break;
+                    case 11:
+                        startActivity(new Intent(IndexActivity.this, BhoplaQuizActivity.class));
+                        break;
                     case 12:
-                    startActivity(new Intent(IndexActivity.this, GhaarExerciseActivity.class)); // ✅ New भोपळा Activity
-                    break;
-
-
-                default:
-                    Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
-                    break;
+                        startActivity(new Intent(IndexActivity.this, GhaarExerciseActivity.class));
+                        break;
+                    default:
+                        Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            } else {
+                // Bhag 2 - Not available yet
+                Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
             }
+            return true;
         });
+    }
+
+    // Prepare group and child data for ExpandableListView
+    private void prepareListData() {
+        listGroupTitles = new ArrayList<>();
+        listChildData = new HashMap<>();
+
+        listGroupTitles.add("भाग १");
+        listGroupTitles.add("भाग २");
+
+        List<String> bhag1Lessons = new ArrayList<>();
+        bhag1Lessons.add("पाठ १: माझ्या या दारातून");
+        bhag1Lessons.add("पाठ ३: वाचनपाठ - १ (काका आला, मामा आला)");
+        bhag1Lessons.add("पाठ ४: वाचनपाठ - २ (घार आली घार)");
+        bhag1Lessons.add("पाठ ५: वाचनपाठ - ३ (आला आला पाऊस आला)");
+        bhag1Lessons.add("पाठ ६: मला घरापर्यंत पोहोचव");
+        bhag1Lessons.add("पाठ ७: टिपके जोड़ व गिरव");
+        bhag1Lessons.add("पाठ ८: ए आई मला पावसात जाऊ दे");
+        bhag1Lessons.add("पाठ ९: शब्द तयार कर व लिही");
+        bhag1Lessons.add("पाठ १०: सोहमचा दिवस");
+        bhag1Lessons.add("पाठ ११: z (ट्रेसिंग)");
+        bhag1Lessons.add("पाठ १२: चतुर उंदीर");
+        bhag1Lessons.add("पाठ १३: भोपळा");
+        bhag1Lessons.add("पाठ 14: priya vp");
+
+        List<String> bhag2Lessons = new ArrayList<>();
+        // Leave empty or add "लवकरच उपलब्ध होईल!" if you want to show a message:
+        // bhag2Lessons.add("लवकरच उपलब्ध होईल!");
+
+        listChildData.put(listGroupTitles.get(0), bhag1Lessons);
+        listChildData.put(listGroupTitles.get(1), bhag2Lessons);
     }
 }

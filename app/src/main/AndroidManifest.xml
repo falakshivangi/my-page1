@@ -70,6 +70,10 @@
             android:name=".GhaarExerciseActivity"
             android:exported="true" >
         </activity >
+        <activity
+            android:name=".ritu1"
+            android:exported="true" >
+        </activity >
 
         <activity
             android:name=".IndexActivity"

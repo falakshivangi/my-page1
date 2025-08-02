@@ -74,6 +74,9 @@ public class IndexActivity extends AppCompatActivity {
                     case 12:
                         startActivity(new Intent(IndexActivity.this, GhaarExerciseActivity.class));
                         break;
+                    case 13:
+                        startActivity(new Intent(IndexActivity.this, ritu1.class));
+                        break;
                     default:
                         Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
                         break;
@@ -108,6 +111,9 @@ public class IndexActivity extends AppCompatActivity {
         bhag1Lessons.add("पाठ १२: चतुर उंदीर");
         bhag1Lessons.add("पाठ १३: भोपळा");
         bhag1Lessons.add("पाठ 14: priya vp");
+        bhag1Lessons.add("पाठ 15: ritu1");
+
+
 
         List<String> bhag2Lessons = new ArrayList<>();
         // Leave empty or add "लवकरच उपलब्ध होईल!" if you want to show a message:

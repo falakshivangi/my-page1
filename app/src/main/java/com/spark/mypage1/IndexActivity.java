@@ -78,6 +78,9 @@ public class IndexActivity extends AppCompatActivity {
                     case 14:
                         startActivity(new Intent(IndexActivity.this, mypage2.class));
                         break;
+                    case 15:
+                        startActivity(new Intent(IndexActivity.this, BarakhadiTracingActivity.class));
+                        break;
                     default:
                         Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
                         break;
@@ -114,6 +117,7 @@ public class IndexActivity extends AppCompatActivity {
         bhag1Lessons.add("पाठ 14: priya vp");
         bhag1Lessons.add("पाठ 15: ritu1");
         bhag1Lessons.add("पाठ 16:क – ओळखा व निवडा");
+        bhag1Lessons.add("पाठ 17:क – bharakhadi");
 
 
 

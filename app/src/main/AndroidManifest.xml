@@ -79,6 +79,10 @@
             android:name=".mypage2"
             android:exported="true" >
         </activity >
+        <activity
+            android:name=".BarakhadiTracingActivity"
+            android:exported="true" >
+        </activity >
 
         <activity
             android:name=".IndexActivity"

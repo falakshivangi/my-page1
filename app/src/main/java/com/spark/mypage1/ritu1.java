@@ -16,7 +16,7 @@ public class ritu1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.ritu1);
 
         tts = new TextToSpeech(getApplicationContext(), status -> {
             if (status != TextToSpeech.ERROR) {

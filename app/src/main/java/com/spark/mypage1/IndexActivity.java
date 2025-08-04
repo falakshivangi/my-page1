@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -76,6 +75,11 @@ public class IndexActivity extends AppCompatActivity {
                         break;
                     case 13:
                         startActivity(new Intent(IndexActivity.this, ritu1.class));
+                    case 14:
+                        startActivity(new Intent(IndexActivity.this, mypage2.class));
+                        break;
+                    case 15:
+                        startActivity(new Intent(IndexActivity.this, BarakhadiTracingActivity.class));
                         break;
                     default:
                         Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
@@ -112,6 +116,8 @@ public class IndexActivity extends AppCompatActivity {
         bhag1Lessons.add("पाठ १३: भोपळा");
         bhag1Lessons.add("पाठ 14: priya vp");
         bhag1Lessons.add("पाठ 15: ritu1");
+        bhag1Lessons.add("पाठ 16:क – ओळखा व निवडा");
+        bhag1Lessons.add("पाठ 17:क – bharakhadi");
 
 
 

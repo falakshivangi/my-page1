@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/mainLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#FFFDE7" android:padding="16dp" tools:ignore="ExtraText">
+    <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="शब्द शोध पाटी" android:textSize="24sp" android:gravity="center" android:textColor="#D84315"/>
+    <GridLayout android:id="@+id/gridLayout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="20dp" android:columnCount="4"
+        android:rowCount="4" android:alignmentMode="alignMargins"/>
+    <RadioGroup android:id="@+id/radioGroup" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+        <RadioButton android:id="@+id/radio2" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="२ अक्षरी"/>
+        <RadioButton android:id="@+id/radio3" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="३ अक्षरी"/>
+        <RadioButton android:id="@+id/radio4" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="४ अक्षरी"/>
+    </RadioGroup>
+    android:useDefaultMargins="true" />
+    <TextView android:id="@+id/selectedWord" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="निवडलेला शब्द: " android:textSize="18sp"
+        android:textColor="#000" android:layout_marginTop="20dp"/>
+    <Button android:id="@+id/checkButton" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="शब्द पडताळा" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+    <TextView android:id="@+id/result" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="" android:textSize="18sp"
+        android:textColor="#2E7D32" android:layout_marginTop="10dp"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="शब्दजाल – शब्द ओळखा व उच्चार करा" android:textStyle="bold" android:textSize="20sp" android:layout_marginBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <!--   6 columns × 4 rows   -->
+        <GridLayout android:id="@+id/gridWords" android:columnCount="6" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <!--  row‑1  -->
+            <Button style="@style/WordCell" android:text="आई"/>
+            <Button style="@style/WordCell" android:text="भाई"/>
+            <Button style="@style/WordCell" android:text="घर"/>
+            <Button style="@style/WordCell" android:text="कती"/>
+            <Button style="@style/WordCell" android:text="मीरा"/>
+            <Button style="@style/WordCell" android:text="समा"/>
+            <!--  row‑2  -->
+            <Button style="@style/WordCell" android:text="काकी"/>
+            <Button style="@style/WordCell" android:text="बाबा"/>
+            <Button style="@style/WordCell" android:text="कृपा"/>
+            <Button style="@style/WordCell" android:text="माणू"/>
+            <Button style="@style/WordCell" android:text="यश"/>
+            <Button style="@style/WordCell" android:text="भामा"/>
+            <!--  row‑3  -->
+            <Button style="@style/WordCell" android:text="रघु"/>
+            <Button style="@style/WordCell" android:text="इरा"/>
+            <Button style="@style/WordCell" android:text="काला"/>
+            <Button style="@style/WordCell" android:text="कमल"/>
+            <Button style="@style/WordCell" android:text="साई"/>
+            <Button style="@style/WordCell" android:text="मान"/>
+            <!--  row‑4  -->
+            <Button style="@style/WordCell" android:text="बाई"/>
+            <Button style="@style/WordCell" android:text="आली"/>
+            <Button style="@style/WordCell" android:text="आमा"/>
+            <Button style="@style/WordCell" android:text="लाल"/>
+            <Button style="@style/WordCell" android:text="समा"/>
+            <Button style="@style/WordCell" android:text="वती"/>
+        </GridLayout>
+        <!--  ───────── TASK 1 ─────────  -->
+        <TextView android:layout_marginTop="24dp" android:text="(१) 'आ' असणारे शब्द लिहा" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/etTask1" android:hint="इथे लिहा…" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <!--  ───────── TASK 2 ─────────  -->
+        <TextView android:layout_marginTop="16dp" android:text="(२) 'ला' असणारे शब्द लिहा" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/etTask2" android:hint="इथे लिहा…" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <!--  ───────── TASK 3 ─────────  -->
+        <TextView android:layout_marginTop="16dp" android:text="(३) 'क' ने सुरू होणारे शब्द लिहा" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/etTask3" android:hint="इथे लिहा…" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btnCheck" android:text="उत्तरे तपासा" android:layout_marginTop="20dp" android:layout_width="wrap_content" android:layout_gravity="center" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

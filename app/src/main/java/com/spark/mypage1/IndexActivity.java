@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -26,13 +28,13 @@ public class IndexActivity extends AppCompatActivity {
 
         prepareListData();
 
-        // Create and set the expandable list adapter
+        // Set the adapter
         CustomExpandableListAdapter adapter = new CustomExpandableListAdapter(this, listGroupTitles, listChildData);
         expandableListView.setAdapter(adapter);
 
         expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
-            // Bhag 1 lessons
             if (groupPosition == 0) {
+                // भाग १
                 switch (childPosition) {
                     case 0:
                         startActivity(new Intent(IndexActivity.this, QuizActivity.class));
@@ -61,39 +63,62 @@ public class IndexActivity extends AppCompatActivity {
                     case 8:
                         startActivity(new Intent(IndexActivity.this, ExerciseSohamActivity.class));
                         break;
+
                     case 9:
-                        startActivity(new Intent(IndexActivity.this, TracingActivity.class));
-                        break;
-                    case 10:
-                        startActivity(new Intent(IndexActivity.this, CleverMouseActivity.class));
-                        break;
-                    case 11:
                         startActivity(new Intent(IndexActivity.this, BhoplaQuizActivity.class));
                         break;
-                    case 12:
-                        startActivity(new Intent(IndexActivity.this, GhaarExerciseActivity.class));
+                    case 10:
+                        startActivity(new Intent(IndexActivity.this, newp.class));
                         break;
-                    case 13:
-                        startActivity(new Intent(IndexActivity.this, ritu1.class));
-                    case 14:
-                        startActivity(new Intent(IndexActivity.this, mypage2.class));
-                        break;
-                    case 15:
-                        startActivity(new Intent(IndexActivity.this, BarakhadiTracingActivity.class));
+                    case 11:
+                        startActivity(new Intent(IndexActivity.this, zzzz.class));
                         break;
                     default:
                         Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
                         break;
                 }
-            } else {
-                // Bhag 2 - Not available yet
-                Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
+            } else if (groupPosition == 1) {
+                // भाग २
+                switch (childPosition) {
+                    case 0:
+                        startActivity(new Intent(IndexActivity.this, mypage2.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(IndexActivity.this, ritu1.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(IndexActivity.this, WordActivity.class));
+                        break;
+
+
+                    case 3:
+                        startActivity(new Intent(IndexActivity.this, ssp.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(IndexActivity.this, WordGridActivity.class));
+                        break;
+
+                    case 5:
+                        startActivity(new Intent(IndexActivity.this, shb.class));
+                        break;
+                    case 6:
+                        startActivity(new Intent(IndexActivity.this, nnnnp.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(IndexActivity.this, sound3.class));
+                        break;
+                    case 8:
+                        startActivity(new Intent(IndexActivity.this, CleverMouseActivity.class));
+                        break;
+                    default:
+                        Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
+                        break;
+                }
             }
             return true;
         });
     }
 
-    // Prepare group and child data for ExpandableListView
     private void prepareListData() {
         listGroupTitles = new ArrayList<>();
         listChildData = new HashMap<>();
@@ -111,19 +136,25 @@ public class IndexActivity extends AppCompatActivity {
         bhag1Lessons.add("पाठ ८: ए आई मला पावसात जाऊ दे");
         bhag1Lessons.add("पाठ ९: शब्द तयार कर व लिही");
         bhag1Lessons.add("पाठ १०: सोहमचा दिवस");
-        bhag1Lessons.add("पाठ ११: z (ट्रेसिंग)");
-        bhag1Lessons.add("पाठ १२: चतुर उंदीर");
-        bhag1Lessons.add("पाठ १३: भोपळा");
-        bhag1Lessons.add("पाठ 14: priya vp");
-        bhag1Lessons.add("पाठ 15: ritu1");
-        bhag1Lessons.add("पाठ 16:क – ओळखा व निवडा");
-        bhag1Lessons.add("पाठ 17:क – bharakhadi");
 
-
+        bhag1Lessons.add("पाठ १२: भोपळा");
+        bhag1Lessons.add("पाठ 16:क – newp");
+        bhag1Lessons.add("पाठ 16:क –zzzz ");
 
         List<String> bhag2Lessons = new ArrayList<>();
-        // Leave empty or add "लवकरच उपलब्ध होईल!" if you want to show a message:
-        // bhag2Lessons.add("लवकरच उपलब्ध होईल!");
+        bhag2Lessons.add("पाठ 13: priya vp");
+        bhag2Lessons.add("पाठ 14: ritu1");
+        bhag2Lessons.add("पाठ 15:क – ओळखा व निवडा");
+
+
+        bhag2Lessons.add("पाठ 18:क – ssp");
+
+        bhag2Lessons.add("पाठ 21:क – shabaga");
+        bhag2Lessons.add("पाठ 22:क – rada che kutumb");
+        bhag2Lessons.add("पाठ 19:क – demo123");
+
+        bhag2Lessons.add("पाठ 23:क – sound3");
+        bhag2Lessons.add("पाठ ११: चतुर उंदीर");
 
         listChildData.put(listGroupTitles.get(0), bhag1Lessons);
         listChildData.put(listGroupTitles.get(1), bhag2Lessons);

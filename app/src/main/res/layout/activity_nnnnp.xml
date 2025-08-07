@@ -1,0 +1,18 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp" android:background="@color/white">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" tools:ignore="ExtraText">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="७. राधाचे कुटुंब" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="8dp" android:layout_marginStart="110dp"/>
+        <!--  Family Image  -->
+        <ImageView android:id="@+id/imageRadhaFamily" android:layout_width="match_parent" android:layout_height="300dp" android:src="@drawable/nnnp" android:adjustViewBounds="true" android:scaleType="fitCenter"/>
+        <!--  Instruction  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="चित्र पहा आणि खालील प्रश्नांची उत्तरे लिहा:" android:textSize="18sp" android:textStyle="bold" android:paddingTop="16dp"/>
+        <!--  Questions and Answers  -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1) हे कुणाचे कुटुंब आहे?" android:textStyle="bold" android:paddingTop="8dp"/>
+        <EditText android:id="@+id/ans1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="उत्तर लिहा"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2) कुटुंबातील सर्वजण काय करत आहेत?" android:textStyle="bold" android:paddingTop="8dp"/>
+        <EditText android:id="@+id/ans2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="उत्तर लिहा"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3) सुट्टीच्या दिवशी कुटुंब काय करते?" android:textStyle="bold" android:paddingTop="8dp"/>
+        <EditText android:id="@+id/ans3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="उत्तर लिहा"/>
+        <!--  Submit Button  -->
+        <Button android:id="@+id/submitBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="उत्तर पाठवा" android:layout_marginTop="16dp" android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</ScrollView>

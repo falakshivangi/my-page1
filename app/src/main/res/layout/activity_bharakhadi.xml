@@ -17,7 +17,7 @@
         android:textColor="#D32F2F"
         android:padding="10dp" />
 
-    <com.spark.mybarahadi.DrawingView
+    <com.spark.mypage1.DrawingView
         android:id="@+id/drawingView"
         android:layout_width="match_parent"
         android:layout_height="300dp"

@@ -3,6 +3,7 @@ package com.spark.mypage1;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.animation.AnimationUtils;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
 
@@ -30,6 +31,10 @@ public class IndexActivity extends AppCompatActivity {
 
         CustomExpandableListAdapter adapter = new CustomExpandableListAdapter(this, listGroupTitles, listChildData);
         expandableListView.setAdapter(adapter);
+
+        ExpandableListView expandableListView = findViewById(R.id.expandableListView);
+        expandableListView.setLayoutAnimation(AnimationUtils.loadLayoutAnimation(this, R.anim.layout_animation_fall_down));
+
 
         expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
             if (groupPosition == 0) {

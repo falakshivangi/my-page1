@@ -14,10 +14,25 @@
         android:theme="@style/Theme.MyPage1"
         tools:targetApi="31">
         <activity
+            android:name=".BarakhadiTracingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VyanjanIndexActivity"
+            android:exported="true" />
+        <activity
+            android:name=".vp6"
+            android:exported="false" />
+        <activity
+            android:name=".vp5"
+            android:exported="false" />
+        <activity
+            android:name=".vp4"
+            android:exported="false" />
+        <activity
             android:name=".zzzz"
             android:exported="false" />
         <activity
-            android:name=".myy1r"
+            android:name=".mypage2"
             android:exported="false" />
         <activity
             android:name=".sound3"
@@ -27,9 +42,6 @@
             android:exported="false" />
         <activity
             android:name=".shb"
-            android:exported="false" />
-        <activity
-            android:name=".create"
             android:exported="false" />
         <activity
             android:name=".WordGridActivity"
@@ -87,9 +99,6 @@
             android:exported="true" />
         <activity
             android:name=".ritu1"
-            android:exported="true" />
-        <activity
-            android:name=".mypage2"
             android:exported="true" />
         <activity
             android:name=".IndexActivity"

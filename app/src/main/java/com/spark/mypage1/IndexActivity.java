@@ -152,19 +152,19 @@ public class IndexActivity extends AppCompatActivity {
         listGroupTitles.add("भाग १");
         listGroupTitles.add("भाग २");
         listGroupTitles.add("भाग ३");
-        listGroupTitles.add("भाग ४"); // new group
+        listGroupTitles.add("शब्दांची गंमत"); // new group
 
         // भाग १ lessons
         List<String> bhag1Lessons = new ArrayList<>();
         bhag1Lessons.add("पाठ १: माझ्या या दारातून");
         bhag1Lessons.add("पाठ 2: मला घरापर्यंत पोहोचव");
-        bhag1Lessons.add("पाठ 3:क – mi ani maja kutub");
-        bhag1Lessons.add("पाठ 4:क – mi ani majii jodii");
+        bhag1Lessons.add("पाठ 3:क – मी आणि माझे कुटुंब");
+        bhag1Lessons.add("पाठ 4:क – मी आणि माझी जोडी");
         bhag1Lessons.add("पाठ 5: टिपके जोड़ व गिरव");
         bhag1Lessons.add("पाठ 6: ए आई मला पावसात जाऊ दे");
         bhag1Lessons.add("पाठ 7: सोहमचा दिवस");
-        bhag1Lessons.add("पाठ 8:क – radhe che kutumb");
-        bhag1Lessons.add("पाठ 9:क – bharakhdi");
+        bhag1Lessons.add("पाठ 8:  राधाचे कुटुंब");
+        bhag1Lessons.add("पाठ 9: भरखडी");
 
 
         // भाग २ lessons
@@ -183,16 +183,16 @@ public class IndexActivity extends AppCompatActivity {
         bhag3Lessons.add(" वाचनपाठ - ३");
         bhag3Lessons.add(" वाचनपाठ - 4");
         bhag3Lessons.add(" वाचनपाठ - 5 ");
-        bhag3Lessons.add("वाचनपाठ - 6 ");
+        bhag3Lessons.add(" वाचनपाठ - 6 ");
 
         // भाग ४ lessons
         List<String> bhag4Lessons = new ArrayList<>();
-        bhag4Lessons.add("पाठ 1: वाचनपाठ 4 ");
-        bhag4Lessons.add("पाठ 2: shabsampada2");
-        bhag4Lessons.add("पाठ 3:क – shabasampada4");
-        bhag4Lessons.add("पाठ 4:क – shabaga5");
-        bhag4Lessons.add("पाठ 5:क – k");
-        bhag4Lessons.add("पाठ 7: शब्द तयार कर व लिही");
+        bhag4Lessons.add("गंमत1");
+        bhag4Lessons.add("गंमत2");
+        bhag4Lessons.add("गंमत3");
+        bhag4Lessons.add("गंमत4");
+        bhag4Lessons.add("गंमत5");
+        bhag4Lessons.add("गंमत6");
         // Mapping groups with their lessons
         listChildData.put(listGroupTitles.get(0), bhag1Lessons);
         listChildData.put(listGroupTitles.get(1), bhag2Lessons);

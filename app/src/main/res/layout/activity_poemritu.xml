@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <!--  Poem title  -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:text="चांदोबाचं घर"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <!--              cloud‑house illustration               -->
+        <!--  The poem itself  -->
+        <ImageView
+            android:layout_width="227dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:contentDescription="Poem illustration"
+            android:src="@drawable/home" />
+
+        <TextView android:id="@+id/tvPoem" android:layout_width="240dp" android:layout_height="422dp" android:layout_marginTop="16dp" android:lineSpacingExtra="4dp" android:text="रात्री स्वप्नात आली एक परी\nम्हणून चल जाऊ\nचांदोबाच्या घरी …\n\nचांदोबाचं घर आम्हां बांधलं\nचांदीचं तोरण दारात टांगलं …\n\nचांदोबाचा रथ आकाशात पळतो …\nपांढरा ससा हळूहळू घातला …\n\nचांदोबाच्या दारी चांदण्यांची बाग\nमुलं आणि फुलं दिसती झोपाझोपा\n\n— विलास मोरे" android:textColor="#000" android:textSize="18sp"/>
+        <TextView android:text="फडकत शब्दजोडीचा खेळ" android:textStyle="bold" android:textSize="18sp" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <!--  Rhyming‑word buttons the child must pair  -->
+        <!--  result  -->
+        <GridLayout
+            android:id="@+id/gridWords"
+            android:layout_width="283dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="12dp"
+            android:columnCount="2">
+            <!--  four buttons  -->
+            <Button
+                android:id="@+id/btnBaanhl"
+                style="@style/RhymeBtn"
+                android:layout_width="102dp"
+                android:layout_height="42dp"
+                android:text="बांधलं" />
+
+            <Button
+                android:id="@+id/btnPahkl"
+                style="@style/RhymeBtn"
+                android:layout_width="108dp"
+                android:layout_height="33dp"
+                android:text="पक्कळं" />
+
+            <Button
+                android:id="@+id/btnGhaatl"
+                style="@style/RhymeBtn"
+                android:layout_width="103dp"
+                android:layout_height="29dp"
+                android:text="घातलं" />
+
+            <Button
+                android:id="@+id/btnTaangl"
+                style="@style/RhymeBtn"
+                android:layout_width="108dp"
+                android:layout_height="32dp"
+                android:text="टांगलं" />
+        </GridLayout>
+        <TextView android:id="@+id/tvResult" android:textColor="#008000" android:textSize="16sp" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

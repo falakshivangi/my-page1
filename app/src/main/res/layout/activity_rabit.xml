@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Lesson Page 1 -->
+        <ImageView
+            android:id="@+id/imageLesson19_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/rabit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="एका जंगलात खूप ससे होते... (पहिल्या पानाचा मजकूर)"
+            android:textSize="18sp"
+            android:lineSpacingExtra="3dp"
+            android:textColor="#000" />
+
+        <!-- Lesson Page 2 -->
+        <ImageView
+            android:id="@+id/imageLesson19_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/rabbit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="आता त्याला खूप तहान लागली होती... (दुसऱ्या पानाचा मजकूर)"
+            android:textSize="18sp"
+            android:lineSpacingExtra="3dp"
+            android:textColor="#000" />
+
+        <!-- Question -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="पुढे सशाने काय बरं केले असेल?"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#D32F2F" />
+
+        <!-- Answer Input -->
+        <EditText
+            android:id="@+id/editAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="इथे तुमचे उत्तर लिहा..."
+            android:background="@drawable/dawablerabit"
+            android:padding="10dp"
+            android:minHeight="100dp"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="सबमिट करा"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFF" />
+
+        <!-- Show Answer -->
+        <TextView
+            android:id="@+id/textShowAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

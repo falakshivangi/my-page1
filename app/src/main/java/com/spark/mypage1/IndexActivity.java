@@ -69,6 +69,10 @@ public class IndexActivity extends AppCompatActivity {
                     case 8:
                         startActivity(new Intent(IndexActivity.this, BarakhadiTracingActivity.class));
                         break;
+                    case 9:
+                        startActivity(new Intent(IndexActivity.this, Lesson19IncompleteActivity.class));
+                        break;
+
 
                     default:
                         Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
@@ -86,6 +90,13 @@ public class IndexActivity extends AppCompatActivity {
                     case 1:
                         startActivity(new Intent(IndexActivity.this, BhoplaQuizActivity.class));
                         break;
+                    case 2:
+                        startActivity(new Intent(IndexActivity.this, ritupoem.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(IndexActivity.this, Lesson21QuizActivity.class));
+                        break;
+
 
                     default:
                         Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
@@ -170,6 +181,7 @@ public class IndexActivity extends AppCompatActivity {
         bhag1Lessons.add("पाठ 7: सोहमचा दिवस");
         bhag1Lessons.add("पाठ 8:  राधाचे कुटुंब");
         bhag1Lessons.add("पाठ 9: भरखडी");
+        bhag1Lessons.add("पाठ 10: रबित आणि डोंगर");
 
 
         // भाग २ lessons
@@ -179,6 +191,8 @@ public class IndexActivity extends AppCompatActivity {
 
         bhag2Lessons.add("पाठ 8: चतुर उंदीर");
         bhag2Lessons.add("पाठ 7: भोपळा");
+        bhag2Lessons.add("पाठ 8: poem");
+        bhag2Lessons.add("पाठ 8: majisuhbati");
 
 
         // भाग ३ lessons

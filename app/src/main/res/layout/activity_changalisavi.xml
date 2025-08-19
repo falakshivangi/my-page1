@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFF8E1">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp" android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="चांगल्या सवयी" android:textSize="24sp"
+            android:textStyle="bold" android:textColor="#D84315" android:padding="8dp"/>
+
+        <!-- Wake Up -->
+        <ImageView android:id="@+id/imgWake" android:layout_width="150dp"
+            android:layout_height="150dp" android:src="@drawable/img_1"/>
+        <Button android:id="@+id/btnWake" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="लवकर उठा"/>
+
+        <!-- Brush -->
+        <ImageView android:id="@+id/imgBrush" android:layout_width="150dp"
+            android:layout_height="150dp" android:src="@drawable/img_5"/>
+        <Button android:id="@+id/btnBrush" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="दात घासा"/>
+
+        <!-- Eat Healthy -->
+        <ImageView android:id="@+id/imgEat" android:layout_width="150dp"
+            android:layout_height="150dp" android:src="@drawable/img_6"/>
+        <Button android:id="@+id/btnEat" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="संतुलित आहार"/>
+
+        <!-- Drink Water -->
+        <ImageView android:id="@+id/imgDrink" android:layout_width="150dp"
+            android:layout_height="150dp" android:src="@drawable/img_7"/>
+        <Button android:id="@+id/btnDrink" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="पाणी प्या"/>
+
+        <!-- Keep Books -->
+        <ImageView android:id="@+id/imgBooks" android:layout_width="150dp"
+            android:layout_height="150dp" android:src="@drawable/img_8"/>
+        <Button android:id="@+id/btnBooks" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="पुस्तके व खेळणी आवरा"/>
+    </LinearLayout>
+</ScrollView>

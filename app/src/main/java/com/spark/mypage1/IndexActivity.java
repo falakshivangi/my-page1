@@ -96,6 +96,13 @@ public class IndexActivity extends AppCompatActivity {
                     case 3:
                         startActivity(new Intent(IndexActivity.this, Lesson21QuizActivity.class));
                         break;
+                    case 4:
+                        startActivity(new Intent(IndexActivity.this, GoodHabitsActivity.class));
+                        break;
+                    case 5:
+                        startActivity(new Intent(IndexActivity.this, PoemSpeakActivity.class));
+                        break;
+
 
 
                     default:
@@ -189,10 +196,12 @@ public class IndexActivity extends AppCompatActivity {
        ;
 
 
-        bhag2Lessons.add("पाठ 8: चतुर उंदीर");
-        bhag2Lessons.add("पाठ 7: भोपळा");
-        bhag2Lessons.add("पाठ 8: poem");
-        bhag2Lessons.add("पाठ 8: majisuhbati");
+        bhag2Lessons.add("पाठ 1: चतुर उंदीर");
+        bhag2Lessons.add("पाठ 2: भोपळा");
+        bhag2Lessons.add("पाठ 3: चंदूबाच घर");
+        bhag2Lessons.add("पाठ 4: माजे सेबाती");
+        bhag2Lessons.add("पाठ 5: चांगली सवय");
+        bhag2Lessons.add("पाठ 6: झुक झुक झुक");
 
 
         // भाग ३ lessons

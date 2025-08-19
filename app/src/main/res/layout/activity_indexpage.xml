@@ -9,7 +9,7 @@
 
     <ExpandableListView
         android:id="@+id/expandableListView"
-        android:layout_width="283dp"
+        android:layout_width="320dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:divider="@android:color/transparent"

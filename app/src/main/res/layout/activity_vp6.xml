@@ -4,91 +4,92 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="वाचनपाठ - ६ : प्रश्न उत्तर"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <!-- Q1 -->
         <TextView
-            android:text="(1) जय व राज यांनी बागेत काय काय पाहिले?"
-            android:textSize="18sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="1) जय व राज यांनी बागेत सत्य काय पाहिले?"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
 
         <RadioGroup
-            android:id="@+id/q1Group"
+            android:id="@+id/radioGroupQ1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/q1a"
-                android:text="फळझाडे, फुलझाडे, मधमाशीचे पोळे, मोर"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <RadioButton android:id="@+id/q1b"
-                android:text="केवळ फुले"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <RadioButton android:id="@+id/q1c"
-                android:text="फक्त मोर"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q1Option1" android:text="मोहर व मध"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q1Option2" android:text="फळझाडे व फुलझाडे"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q1Option3" android:text="पानगळ व आंबा"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
         </RadioGroup>
 
         <!-- Q2 -->
         <TextView
-            android:text="(2) बाग हिरवागार कशी दिसते?"
-            android:textSize="18sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="2) बाग हिरवळीमध्ये कशी दिसते?"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
 
         <RadioGroup
-            android:id="@+id/q2Group"
+            android:id="@+id/radioGroupQ2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/q2a"
-                android:text="कारण तिथे बरीच झाडे व गवत आहे"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <RadioButton android:id="@+id/q2b"
-                android:text="कारण तिथे पाणी आहे"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <RadioButton android:id="@+id/q2c"
-                android:text="कारण तिथे प्राणी आहेत"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q2Option1" android:text="सुंदर व फुलांनी भरलेली"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q2Option2" android:text="कोरडी व पानांनी झाकलेली"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q2Option3" android:text="फक्त झाडांनी भरलेली"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
         </RadioGroup>
 
         <!-- Q3 -->
         <TextView
-            android:text="(3) तू बागेत फिरायला गेल्यास काय काय पाहशील?"
-            android:textSize="18sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="3) तुम्ही फिरायला गेल्यावर बागेत काय पाहिले?"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
 
         <RadioGroup
-            android:id="@+id/q3Group"
+            android:id="@+id/radioGroupQ3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/q3a"
-                android:text="फुले, झाडे, फुलपाखरे"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <RadioButton android:id="@+id/q3b"
-                android:text="केवळ झाडे"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <RadioButton android:id="@+id/q3c"
-                android:text="केवळ फुले"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/q3Option1" android:text="मोहर व मध"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q3Option2" android:text="फळे व फुले"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <RadioButton android:id="@+id/q3Option3" android:text="पान व झाडे"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
         </RadioGroup>
 
         <Button
-            android:id="@+id/submitBtn"
-            android:text="सबमिट"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"/>
+            android:text="उत्तर तपासा"
+            android:layout_marginTop="24dp"/>
     </LinearLayout>
 </ScrollView>

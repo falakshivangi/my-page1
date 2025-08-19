@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="क – ओळखा व निवडा"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#4E342E"
+            android:paddingBottom="12dp" />
+
+        <!-- Table with image + toggle button -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_2" />
+                <ToggleButton
+                    android:id="@+id/toggleganpati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn=" गणपती"
+                    android:textOff="गणपती" />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/khekada" />
+                <ToggleButton
+                    android:id="@+id/togglekekada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="खेकडा - ✔"
+                    android:textOff="खेकडा" />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/kadai" />
+                <ToggleButton
+                    android:id="@+id/toggleKadai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="कडई - ✔"
+                    android:textOff="कडई" />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_3" />
+                <ToggleButton
+                    android:id="@+id/toggletalvar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="तलवार - ✔"
+                    android:textOff="तलवार" />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_4" />
+                <ToggleButton
+                    android:id="@+id/toggleghar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="घर - ✔"
+                    android:textOff="घर" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/my_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="पाठवा"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+</ScrollView>

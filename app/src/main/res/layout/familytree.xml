@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAF0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Tree Background -->
+        <ImageView
+            android:id="@+id/treeImage"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tree_bg" />
+
+        <!-- Top tree images -->
+        <ImageView
+            android:id="@+id/box1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="60dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/box_border"
+            android:scaleType="centerCrop"
+            android:contentDescription="Box 1" />
+
+        <ImageView
+            android:id="@+id/box2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/box_border"
+            android:scaleType="centerCrop"
+            android:contentDescription="Box 2" />
+
+        <ImageView
+            android:id="@+id/box3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/box_border"
+            android:scaleType="centerCrop"
+            android:contentDescription="Box 3" />
+
+        <!-- Lower tree images -->
+        <ImageView
+            android:id="@+id/box4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="60dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/box_border"
+            android:scaleType="centerCrop"
+            android:contentDescription="Box 4" />
+
+        <ImageView
+            android:id="@+id/box5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="60dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/box_border"
+            android:scaleType="centerCrop"
+            android:contentDescription="Box 5" />
+
+        <!-- Kids -->
+        <ImageView
+            android:id="@+id/girlBox"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/treeImage"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/box_border"
+            android:scaleType="centerCrop"
+            android:contentDescription="Girl" />
+
+        <ImageView
+            android:id="@+id/boyBox"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/treeImage"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/box_border"
+            android:scaleType="centerCrop"
+            android:contentDescription="Boy" />
+    </RelativeLayout>
+</ScrollView>

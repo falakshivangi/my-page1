@@ -1,23 +1,30 @@
 package com.spark.mypage1;
 
-
-import android.graphics.BitmapFactory;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.spark.mypage1.TracingActivity;
 
 public class TracingActivity extends AppCompatActivity {
 
-    TracingView tracingView;
+    View tracingView;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.trace2);
+        setContentView(R.layout.trace);
 
+        // Make sure trace.xml has a View/ImageView with id 'tracingView'
         tracingView = findViewById(R.id.tracingView);
 
-        // Set the background image for tracing
-        tracingView.setImage(BitmapFactory.decodeResource(getResources(), R.drawable.tracing));
+        // Set background or image
+        tracingView.setBackgroundResource(R.drawable.tracing);
+        // If it's an ImageView, use:
+        // ((ImageView) tracingView).setImageResource(R.drawable.tracing);
     }
 }
-

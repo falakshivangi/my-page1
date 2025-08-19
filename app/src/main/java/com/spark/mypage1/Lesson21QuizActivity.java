@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.spark.mypage1.Lesson21QuizActivity;
+
 public class Lesson21QuizActivity extends AppCompatActivity {
 
     RadioGroup q1Group, q2Group, q3Group, q4Group, q5Group, q6Group, q7Group;
@@ -16,8 +18,9 @@ public class Lesson21QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_majisuhabati);
+        setContentView(R.layout.activity_majisuhabati);  // XML layout
 
+        // Bind RadioGroups & Button
         q1Group = findViewById(R.id.q1Group);
         q2Group = findViewById(R.id.q2Group);
         q3Group = findViewById(R.id.q3Group);
@@ -30,13 +33,11 @@ public class Lesson21QuizActivity extends AppCompatActivity {
         submitBtn.setOnClickListener(v -> {
             int score = 0;
 
-            // Correct answers:
+            // Correct answers
             if (getSelectedText(q1Group).equals("पोपट")) score++;
             if (getSelectedText(q2Group).equals("झाडावर")) score++;
             if (getSelectedText(q3Group).equals("कुत्रा")) score++;
             if (getSelectedText(q4Group).equals("शेळी")) score++;
-            // Q5, Q6, Q7 are opinion-based; we won't score them as right/wrong
-            // But if you want, you can set a preferred answer and score them too
             if (getSelectedText(q5Group).equals("दोन्ही")) score++;
             if (getSelectedText(q6Group).equals("दोन्ही")) score++;
             if (getSelectedText(q7Group).equals("दोन्ही")) score++;
@@ -46,6 +47,7 @@ public class Lesson21QuizActivity extends AppCompatActivity {
     }
 
     private String getSelectedText(RadioGroup group) {
+        if (group == null) return "";
         int id = group.getCheckedRadioButtonId();
         if (id == -1) return "";
         RadioButton rb = findViewById(id);

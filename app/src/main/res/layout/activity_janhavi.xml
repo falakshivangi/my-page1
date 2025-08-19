@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Custom Tracing View -->
+    <com.spark.mypage1.JanhaviTrasing
+        android:id="@+id/tracingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/colorLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF" />
+
+    <!-- Color Selection Buttons -->
+    <LinearLayout
+        android:id="@+id/colorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/colorRed"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F44336"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/colorBlue"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/colorGreen"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text=""/>
+
+        <Button
+            android:id="@+id/colorBlack"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text=""/>
+    </LinearLayout>
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="मागे"
+            android:backgroundTint="#9E9E9E"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="साफ करा"
+            android:backgroundTint="#F57C00"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="पुढे"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</RelativeLayout>

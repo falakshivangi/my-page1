@@ -72,6 +72,15 @@ public class IndexActivity extends AppCompatActivity {
                     case 9:
                         startActivity(new Intent(IndexActivity.this, Lesson19IncompleteActivity.class));
                         break;
+                    case 10:
+                        startActivity(new Intent(IndexActivity.this, marathi.class));
+                        break;
+                    case 11:
+                        startActivity(new Intent(IndexActivity.this, Janhavi.class));
+                        break;
+
+
+
 
 
                     default:
@@ -96,13 +105,6 @@ public class IndexActivity extends AppCompatActivity {
                     case 3:
                         startActivity(new Intent(IndexActivity.this, Lesson21QuizActivity.class));
                         break;
-                    case 4:
-                        startActivity(new Intent(IndexActivity.this, GoodHabitsActivity.class));
-                        break;
-                    case 5:
-                        startActivity(new Intent(IndexActivity.this, PoemSpeakActivity.class));
-                        break;
-
 
 
                     default:
@@ -157,6 +159,17 @@ public class IndexActivity extends AppCompatActivity {
                     case 5:
                         startActivity(new Intent(IndexActivity.this, WordActivity.class));
                         break;
+                    case 6:
+                        startActivity(new Intent(IndexActivity.this, application.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(IndexActivity.this, application2.class));
+                        break;
+                    case 8:
+                        startActivity(new Intent(IndexActivity.this, mypage2.class));
+                        break;
+
+
 
                     default:
                         Toast.makeText(this, "लवकरच उपलब्ध होईल!", Toast.LENGTH_SHORT).show();
@@ -189,6 +202,8 @@ public class IndexActivity extends AppCompatActivity {
         bhag1Lessons.add("पाठ 8:  राधाचे कुटुंब");
         bhag1Lessons.add("पाठ 9: भरखडी");
         bhag1Lessons.add("पाठ 10: रबित आणि डोंगर");
+        bhag1Lessons.add("पाठ 11:शेतातील प्राणी ओळखा");
+        bhag1Lessons.add("पाठ 12:लिही गिरव आणि वाचा");
 
 
         // भाग २ lessons
@@ -196,12 +211,10 @@ public class IndexActivity extends AppCompatActivity {
        ;
 
 
-        bhag2Lessons.add("पाठ 1: चतुर उंदीर");
-        bhag2Lessons.add("पाठ 2: भोपळा");
-        bhag2Lessons.add("पाठ 3: चंदूबाच घर");
-        bhag2Lessons.add("पाठ 4: माजे सेबाती");
-        bhag2Lessons.add("पाठ 5: चांगली सवय");
-        bhag2Lessons.add("पाठ 6: झुक झुक झुक");
+        bhag2Lessons.add("पाठ 8: चतुर उंदीर");
+        bhag2Lessons.add("पाठ 7: भोपळा");
+        bhag2Lessons.add("पाठ 8: poem");
+        bhag2Lessons.add("पाठ 8: majisuhbati");
 
 
         // भाग ३ lessons
@@ -221,6 +234,9 @@ public class IndexActivity extends AppCompatActivity {
         bhag4Lessons.add("गंमत4");
         bhag4Lessons.add("गंमत5");
         bhag4Lessons.add("गंमत6");
+        bhag4Lessons.add("गंमत7");
+        bhag4Lessons.add("गंमत8");
+        bhag4Lessons.add("गंमत9");
         // Mapping groups with their lessons
         listChildData.put(listGroupTitles.get(0), bhag1Lessons);
         listChildData.put(listGroupTitles.get(1), bhag2Lessons);

@@ -1,8 +1,14 @@
 package com.spark.mypage1;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.*;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.spark.mypage1.BarakhadiTracingActivity;
 
 public class BarakhadiTracingActivity extends AppCompatActivity {
 
@@ -13,10 +19,11 @@ public class BarakhadiTracingActivity extends AppCompatActivity {
     String[] barakhadi;
     int currentIndex = 0;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bharakhadi); // ✅ Use correct layout
+        setContentView(R.layout.activity_barakhadi_tracing);
 
         // Bind views
         letterText = findViewById(R.id.letterText);
@@ -25,9 +32,11 @@ public class BarakhadiTracingActivity extends AppCompatActivity {
         prevBtn = findViewById(R.id.prevBtn);
         clearBtn = findViewById(R.id.clearBtn);
 
-        // Get Vyanjan from intent
-        String vyanjan = getIntent().getStringExtra("VANJAN");
-        if (vyanjan == null) vyanjan = "क"; // default
+        // Get Vyanjan from intent (default to "क" if not provided)
+        String vyanjan = getIntent().getStringExtra("VYANJAN");
+        if (vyanjan == null || vyanjan.trim().isEmpty()) {
+            vyanjan = "क";
+        }
 
         // Generate barakhadi variations
         barakhadi = new String[]{

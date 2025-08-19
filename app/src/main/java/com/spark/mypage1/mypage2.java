@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.spark.mypage1.mypage2;
+
 public class mypage2 extends Activity {
 
     Button nextButton;

@@ -3,9 +3,7 @@ package com.spark.mypage1;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
+import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class VyanjanIndexActivity extends AppCompatActivity {
@@ -25,7 +23,6 @@ public class VyanjanIndexActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Use the correct layout that has the ListView
         setContentView(R.layout.activity_bharakhadi);
 
         vyanjanListView = findViewById(R.id.vyanjanListView);
@@ -36,7 +33,7 @@ public class VyanjanIndexActivity extends AppCompatActivity {
 
         vyanjanListView.setOnItemClickListener((parent, view, position, id) -> {
             String selectedVyanjan = vyanjan[position];
-            Intent intent = new Intent(VyanjanIndexActivity.this, BarakhadiTracingActivity.class);
+            Intent intent = new Intent(VyanjanIndexActivity.this, com.spark.mypage1.BarakhadiTracingActivity.class);
             intent.putExtra("VYANJAN", selectedVyanjan);
             startActivity(intent);
         });

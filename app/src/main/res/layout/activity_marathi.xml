@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kids_bg"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <!-- Farm Scene Image -->
+            <ImageView
+                android:id="@+id/farmImage"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/farm_scene"
+                android:background="@drawable/image_border"
+                android:scaleType="fitXY" />
+
+            <!-- Question 1 -->
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🐮 गायीच्या जवळ कोण आहे?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:paddingTop="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioFarmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="शेतकरी 👨‍🌾"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/purple" />
+
+                <RadioButton
+                    android:id="@+id/radioDog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="कुत्रा 🐕"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/purple" />
+
+                <RadioButton
+                    android:id="@+id/radioChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="मुलगा 👦"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/purple" />
+            </RadioGroup>
+
+            <!-- Question 2 -->
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🐐 चित्रातला योग्य प्राणी निवडा:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:paddingTop="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioCow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="गाय 🐄"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/teal" />
+
+                <RadioButton
+                    android:id="@+id/radioCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="मांजर 🐈"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/teal" />
+
+                <RadioButton
+                    android:id="@+id/radioGoat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="बकरी 🐐"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/teal" />
+            </RadioGroup>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅ सबमिट"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/orange"
+                android:layout_marginTop="30dp"
+                android:padding="12dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
